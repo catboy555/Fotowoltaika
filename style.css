@@ -1,0 +1,35 @@
+.site-content {
+  width: 100%; 
+  margin: 0 auto;
+  background-color: #8ECBE5;
+}
+
+.site-content header {
+  background-color: #69A9CF;
+  color: #D2D6D6;
+  margin-bottom: 30px;
+}
+
+.site-content footer {
+  background-color: #69A9CF;
+  color: #D2D6D6;
+  margin-top: 30px;
+}
+
+.text-content1,
+.text-content2,
+.text-content3,
+.text-content4 {
+  background-color: #B0D8EF;
+  margin-top: 25px;
+  margin-bottom: 25px; /* Corrected typo */
+}
+
+#image-section {
+  text-align: center;
+}
+
+#image-section img {
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Jak szybko zwróci ci się Twoja fotowoltaika?</title>
+</head>
+<body>
+<div class="site-content">
+<header>
+    <h1>Fotowoltaika</h1>
+</header>
+<main>
+    <h1>Jak szybko zwróci Ci się Twoja fotowoltaika?</h1>
+    <label for="jInput">Ilość Twojej fotowoltaiki/w kwp/</label>
+    <input type="number" id="jInput"><br><br>
+    <label for="cInput">Cena skupu energii w Twojej taryfie/zł za MW/</label>
+    <input type="number" id="cInput"><br><br>
+	<label for="kInput">Cena za 1kwp Twojej fotowoltaiki/zł/</label>
+    <input type="number" id="kInput"><br><br>
+    <button onclick="calculate()">Kalkuluj</button><br><br>
+    <div id="result"></div>
+
+    <script>
+        function calculate() {
+            var j = parseFloat(document.getElementById("jInput").value);
+            var c = parseFloat(document.getElementById("cInput").value);
+			var k = parseFloat(document.getElementById("kInput").value);
+            var b = k * j / c;
+            document.getElementById("result").innerText = "Twoja fotowoltaika zwróci się w: " + b + "lat.";
+        }
+    </script>
+</main>
+<footer class="center">
+	<nav>
+        <a href="mainPage.html">Do strony głównej</a>
+	</nav>
+ <p>Fotowoltaika, 2024, Zuzanna Jazukiewicz, Ewa Ciszek, Julia Cwynar</p>
+</footer>
+</div>
+</body>
+</html>
